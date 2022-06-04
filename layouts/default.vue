@@ -125,5 +125,8 @@ export default {
       title: "Vuetify.js",
     };
   },
+  beforeCreate(){
+    this.$store.dispatch("users/store_userdata")
+  }
 };
 </script>
